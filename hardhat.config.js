@@ -1,6 +1,3 @@
-/**
- * @type import('hardhat/config').HardhatUserConfig
- */
 require("@nomiclabs/hardhat-truffle5");
 require('@openzeppelin/hardhat-upgrades');
 
