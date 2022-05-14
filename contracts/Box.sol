@@ -6,16 +6,10 @@ pragma solidity ^0.8.0;
 contract Box {
     
     uint256 private _value;
-    // Auth private _auth;
 
     event ValueChanged(uint256 value);
 
-    // constructor() {
-    //     _auth = new Auth(msg.sender);
-    // }
-
     function store(uint256 value) public {
-        // require(_auth.isAdmin(msg.sender), "Unauthorized");
         _value = value;
         emit ValueChanged(value);
     }
